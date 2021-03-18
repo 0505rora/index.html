@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>국어 모의고사 준비!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gugi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <style>
+      .button {
+        display: inline-block;
+        border-radius: 30px;
+        background-color: #41A317;
+        border: 2px solid #FFFFFF;
+        color:black;
+        text-align: center;
+        font-size: 13px;
+        padding: 10px;
+        margin:10px;
+        width:170px;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .button:hover span {
+          padding-right: 25px;
+        }
+      .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+      h1 {
+          text-align:center;
+          background-color:#41A317;
+          font-family: 'Black Han Sans', sans-serif;
+          margin:0;
+          font-size: 45px;
+          color:#FFFFFF
+        }
+      h2 {
+          text-align: center;
+          background-color:#41A317;
+          font-family: 'Black Han Sans', sans-serif;
+          padding:40px;
+          padding-top: 20px;
+          font-size:65px;
+          margin:0;
+          color:#FFFFFF
+        }
+      #title {
+        margin:0;
+      }
+      .top10 {
+        font-family: 'Gugi', cursive;
+        text-align:center;
+        padding:40px;
+        padding-bottom: 20px;
+        font-size: 26px;
+      }
+      .top10button {
+        font-size: 13px;
+        float: left;
+        border: 1px solid green;
+        width:20%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin:0;
+      }
+      .disabled {
+        font-size: 13px;
+        float: left;
+        border: 1px solid green;
+        width:20%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin:0;
+        opacity: 0.6;
+        cursor: not-allowed;
+        background-color: #41A317;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="background-color:#41A317" id=title>
+      <a href="http://www.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRng.ebs?targetCd=D200" target="_blank"><button class="button" style="vertical-align:middle"> <span style="color:#FFFFFF">시험일정/출제범위</span></button></a>
+      <h1>2 0 2 1 .  3 .  2 4 </h1>
+      <h2><span style="color:yellow">국어</span> 모의고사 준비!</h2>
+    </p>
+    <p class="top10">작년 3월 모의고사 오답률 TOP5 문제 도장깨기</P>
+    <button class="disabled"><span>5위</span></button>
+    <button class="disabled"><span>4위</span></button>
+    <button class="disabled"><span>3위</span></button>
+    <a href="top2.html"><button class="top10button"><span>2위</span></button></a>
+    <button class="top10button"><span>1위</span></button>
+</html>
